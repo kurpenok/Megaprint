@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Полиграфия Мегапринт | {% block title %}{% endblock %}</title>
+        {% load static %}
+        <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/custom.css' %}" type="text/css">
+    </head>
+    <body>
+        <div class="d-flex d-flex-column flex-md-row align-items-center p-3 px-md-4 mb-3">
+            <h5 class="my-0 mr-md-auto font-weight-normal text-light">Мегапринт</h5>
+            <nav class="my-2 my-md-8 mr-md-3">
+                <a class="p-2 text-light menu-custom" href="/">Главная</a>
+                <a class="p-2 text-light menu-custom" href="/goods">Каталог</a>
+                <a class="p-2 text-light menu-custom" href="/contacts">Контакты</a>
+            </nav>
+            <a class="btn btn-outline-warning" href="/admin">Войти</a>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-3 img-fluid">
+                    <img src="{% static 'images/logo.png' %}" width="100%">
+                </div>
+                <div class="col-3">
+                </div>
+                <div class="col-6 text">
+                    <h1 class="h1 text-light" align="right">Полиграфия Мегапринт</h1>
+                    <br>
+                    <p class="text-light" align="right">г. Омск, пр. К.Маркса, 18/3, <br>офис 204 (2 этаж)</p>
+                    <p class="text-light" align="right">+7-962-058-90-83</p>
+                    <p class="text-light" align="right">+7(3812) 63-90-83</p>
+                    <p class="text-light" align="right">639083@mail.ru</p>
+                </div>
+            </div>
+        </div>
+
+        {% block content %}
+        {% endblock %}
+
+        <div class="bg-white">
+            <footer class="container card-footer bg-white">
+                <div class="text-center" style="padding: 1em">
+                    <span><a href="https://vk.com/1megaprint/"><img src="{% static 'images/vk.svg' %}" width="30em"></a></span>
+                    <span><a href="https://www.instagram.com/megaprint.omsk/"><img src="{% static 'images/instagram.svg' %}" width="30em"></a></span>
+                    <span><a href="https://mail.ru/"><img src="{% static 'images/mail.svg' %}" width="30em"></a></span>
+                </div>
+                <p class="text-center text-muted">&copy; Полиграфия Мегапринт 2020</p>
+            </footer>
+        </div>
+
+        {% load static %}
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+        <script type="text/javascript">
+            var options = {
+                interval: 3000,
+                pause: 'hover',
+                wrap: true
+            };
+            $('#main-carousel').carousel(options);
+        </script>
+    </body>
+</html>

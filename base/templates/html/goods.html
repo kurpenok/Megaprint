@@ -1,0 +1,60 @@
+{% extends "html/template.html" %}
+
+{% block title %}
+Каталог товаров
+{% endblock %}
+
+{% block content %}
+    <div class="bg-white" style="margin-top: 3em; padding-top: 3em; padding-bottom: 3em">
+        <div class="container">
+            <h2 class="modal-header" style="margin-bottom: 1em">Каталог товаров</h2>
+            <div id="main-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#main-carousel" data-slide-to="1"></li>
+                    <li data-target="#main-carousel" data-slide-to="2"></li>
+                    <li data-target="#main-carousel" data-slide-to="3"></li>
+                    <li data-target="#main-carousel" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        {% load static %}
+                        <img src="{% static 'images/cards.jpg' %}" width="100%">
+                        <div class="carousel-caption">
+                            <h3>Title</h3>
+                            <p>Text. Many text...</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/laminating.jpg' %}" width="100%">
+                        <div class="carousel-caption">
+                            <h3>Title</h3>
+                            <p>Text. Many text...</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/office.jpg' %}" width="100%">
+                        <div class="carousel-caption">
+                            <h3>Title</h3>
+                            <p>Text. Many text...</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/print.jpg' %}" width="100%">
+                        <div class="carousel-caption">
+                            <h3>Title</h3>
+                            <p>Text. Many text...</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/colors.jpg' %}" width="100%">
+                        <div class="carousel-caption">
+                            <h3>Title</h3>
+                            <p>Text. Many text...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
