@@ -6,3 +6,4 @@ venv/lib/python3.8/site-packages/setuptools-47.1.0.dist-info/RECORD
 venv/lib/python3.8/site-packages/setuptools/_vendor/pyparsing.py
 venv/lib/python3.8/site-packages/*/RECORD
 venv/lib/python3.8/site-packages/django/contrib/admin/static/admin/fonts/LICENSE.txt
+base/static/images/*.svg

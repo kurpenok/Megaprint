@@ -1,0 +1,7 @@
+body{
+    background-image: url("../images/background.jpg");
+    background-attachment: fixed;
+}
+.menu-custom:hover{
+    text-decoration: none;
+}
